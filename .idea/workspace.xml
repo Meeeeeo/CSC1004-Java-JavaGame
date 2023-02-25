@@ -5,12 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f399a3f9-5b13-4d53-9491-6f5fb3e13ce1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/McHunterApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/McHunterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/McHunterType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/AttackComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/PlayerAnimationComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/ui/UpdatedMainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Class" />
+        <option value="module-info" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,7 +39,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2LnZHbESGIEof72BRMa2lTMII9w" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,9 +50,28 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/meo/Desktop/CSC1004/javaproject/CSC1004java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editing.templates"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="testPackage.ui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/testPackage" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,6 +81,27 @@
       <option name="presentableId" value="Default" />
       <updated>1676508720066</updated>
       <workItem from="1676508722474" duration="83000" />
+      <workItem from="1676509103516" duration="1000" />
+      <workItem from="1676727104143" duration="2358000" />
+      <workItem from="1676730153713" duration="582000" />
+      <workItem from="1676730740324" duration="397000" />
+      <workItem from="1676732044739" duration="651000" />
+      <workItem from="1676788113020" duration="44000" />
+      <workItem from="1676795082458" duration="5000" />
+      <workItem from="1676802600801" duration="125000" />
+      <workItem from="1676802730834" duration="2000" />
+      <workItem from="1676802786175" duration="309000" />
+      <workItem from="1676903441751" duration="3670000" />
+      <workItem from="1676945602634" duration="407000" />
+      <workItem from="1676946657760" duration="32000" />
+      <workItem from="1676946860609" duration="96000" />
+      <workItem from="1676948172956" duration="1358000" />
+      <workItem from="1676950273381" duration="4459000" />
+      <workItem from="1676970048282" duration="824000" />
+      <workItem from="1676970885870" duration="259000" />
+      <workItem from="1676971386258" duration="108000" />
+      <workItem from="1676984301597" duration="7015000" />
+      <workItem from="1677122572686" duration="16575000" />
     </task>
     <servers />
   </component>
