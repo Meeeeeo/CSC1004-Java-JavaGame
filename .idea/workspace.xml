@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f399a3f9-5b13-4d53-9491-6f5fb3e13ce1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/FollowingPlayerComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/InjuredComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/PlayerMoveComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid17344.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid17344.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-23-2月-2023-19.57.48.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-23-2月-2023-19.58.22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-23-2月-2023-20.26.41.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-23-2月-2023-20.27.04.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-23-2月-2023-20.30.08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-23-2月-2023-20.31.21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-24-2月-2023-01.54.09.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-24-2月-2023-02.00.21.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-24-2月-2023-02.01.48.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-24-2月-2023-02.06.01.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-24-2月-2023-02.06.04.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McHunterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McHunterFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McHunterType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/AttackComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/ShootComponent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,24 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/meo/Desktop/CSC1004/javaproject/CSC1004java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/meo/Desktop/CSC1004/javaproject/CSC1004java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="testPackage.ui" />
@@ -125,7 +106,7 @@
       <workItem from="1679926376578" duration="6666000" />
       <workItem from="1679970296675" duration="6840000" />
       <workItem from="1679998022725" duration="30000" />
-      <workItem from="1680005566562" duration="2042000" />
+      <workItem from="1680005566562" duration="2374000" />
     </task>
     <servers />
   </component>
