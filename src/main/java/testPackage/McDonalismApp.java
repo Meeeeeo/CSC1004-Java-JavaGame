@@ -8,6 +8,8 @@ import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.input.UserAction;
 import com.almasb.fxgl.input.virtual.FXGLVirtualMenuKey;
+import com.almasb.fxgl.particle.ParticleEmitters;
+import javafx.geometry.Point2D;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.scene.paint.Color;
@@ -65,6 +67,12 @@ public class McDonalismApp extends GameApplication{
         return player1;
     }
 
+    private Point2D dir = new Point2D(0,0);
+    private final Point2D up = new Point2D(0,-1);
+    private final Point2D down = new Point2D(0,1);
+    private final Point2D left = new Point2D(-1,0);
+    private final Point2D right = new Point2D(1,0);
+
 
     @Override
     protected void initGame() {
@@ -85,13 +93,19 @@ public class McDonalismApp extends GameApplication{
         Viewport viewport = getGameScene().getViewport();
         viewport.bindToEntity(player1, getAppWidth() / 2, getAppHeight() / 2);
         viewport.setBounds(-400, -400, 1200, 1200);
+        viewport.unbind();
+
+
+
+
+        player1.getComponent(PlayerMoveComponent.class).move(dir);
     }
 
     @Override
     protected void initPhysics() {
         onCollision(McDonalismType.PLAYER, McDonalismType.ENEMY, (player, enemy) ->
         {
-            enemy.removeFromWorld();
+//            enemy.removeFromWorld();
         });
 
         onCollision(McDonalismType.BULLET, McDonalismType.ENEMY, (bullet, enemy) ->
@@ -102,6 +116,12 @@ public class McDonalismApp extends GameApplication{
     }
 
     @Override
+    protected void onUpdate(double tpf) {
+
+            player1.getComponent(PlayerMoveComponent.class).move(dir);
+    }
+
+    @Override
     protected void initInput() {
 
 //        onKey(KeyCode.W, () -> player1.translateY(-1));
@@ -109,31 +129,52 @@ public class McDonalismApp extends GameApplication{
 //        onKey(KeyCode.A, () -> player1.translateX(-1));
 //        onKey(KeyCode.D, () -> player1.translateX(1));
 
-
         FXGL.getInput().addAction(new UserAction("Up") {
             @Override
-            protected void onAction() {
-                player1.getComponent(PlayerMoveComponent.class).up();
+            protected void onActionBegin() {
+                dir = dir.add(up) ;
+            }
+            @Override
+            protected void onActionEnd() {
+                dir = dir.subtract(up);
             }
         }, KeyCode.W);
         FXGL.getInput().addAction(new UserAction("Down") {
             @Override
-            protected void onAction() {
-                player1.getComponent(PlayerMoveComponent.class).down();
+            protected void onActionBegin() {
+                dir = dir.add(down) ;
+            }
+            @Override
+            protected void onActionEnd() {
+                dir = dir.subtract(down);
             }
         }, KeyCode.S);
         FXGL.getInput().addAction(new UserAction("Left") {
             @Override
-            protected void onAction() {
-                player1.getComponent(PlayerMoveComponent.class).left();
+            protected void onActionBegin() {
+                dir = dir.add(left) ;
             }
+            @Override
+            protected void onActionEnd() {
+                dir = dir.subtract(left);
+                System.out.println(getPlayer1().getPosition3D());
+                System.out.println(getPlayer1().getZIndex());
+                System.out.println();
+
+            }
+
         }, KeyCode.A);
         FXGL.getInput().addAction(new UserAction("Right") {
             @Override
-            protected void onAction() {
-                player1.getComponent(PlayerMoveComponent.class).right();
+            protected void onActionBegin() {
+                dir = dir.add(right) ;
+            }
+            @Override
+            protected void onActionEnd() {
+                dir = dir.subtract(right);
             }
         }, KeyCode.D);
+
 
         FXGL.getInput().addAction(new UserAction("Shoot") {
             @Override
@@ -141,6 +182,7 @@ public class McDonalismApp extends GameApplication{
                 player1.getComponent(ShootComponent.class).shoot(getInput().getMousePositionWorld());
             }
         }, MouseButton.PRIMARY);
+
 
 
     }
