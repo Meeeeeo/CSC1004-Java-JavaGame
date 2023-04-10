@@ -3,12 +3,11 @@ package testPackage;
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.app.GameSettings;
 import com.almasb.fxgl.app.scene.FXGLMenu;
+import com.almasb.fxgl.app.scene.SceneFactory;
 import com.almasb.fxgl.app.scene.Viewport;
 import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.input.UserAction;
-import com.almasb.fxgl.input.virtual.FXGLVirtualMenuKey;
-import com.almasb.fxgl.particle.ParticleEmitters;
 import javafx.geometry.Point2D;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
@@ -16,6 +15,7 @@ import javafx.scene.paint.Color;
 import javafx.util.Duration;
 import testPackage.components.PlayerMoveComponent;
 import testPackage.components.ShootComponent;
+import testPackage.ui.MainMenu;
 
 import java.util.Map;
 
@@ -45,13 +45,12 @@ public class McDonalismApp extends GameApplication{
 //        settings.setAppIcon();
 
         settings.setMainMenuEnabled(true);
-//        settings.setSceneFactory(new SceneFactory(){
-//            @NotNull
-//            @Override
-//            public FXGLMenu newMainMenu() {
-//                return new UpdatedMainMenu();
-//            }
-//        });
+        settings.setSceneFactory(new SceneFactory(){
+            @Override
+            public FXGLMenu newMainMenu() {
+                return new MainMenu();
+            }
+        });
 
 
         //settings.setDeveloperMenuEnabled(true);
