@@ -10,10 +10,6 @@ public class JdbcUtils {
 
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
-    /**
-     * Notation：
-     * modify following URL
-     */
     private static final String URL = "jdbc:mysql://localhost:3306/testdb?allowPublicKeyRetrieval=true&useSSL=false&characterEncoding=utf-8";
 
 
@@ -29,12 +25,6 @@ public class JdbcUtils {
             e.printStackTrace();
         }
     }
-
-    /**
-     * 获得数据库的连接   obtain connection to database
-     *
-     * @return Connection 数据库连接对象  object of DB connection
-     */
     public Connection getConnection() {
         try {
             connection = DriverManager.getConnection(URL, USER_NAME, PASSWORD);

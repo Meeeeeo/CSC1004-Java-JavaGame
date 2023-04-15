@@ -13,8 +13,8 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
-import testPackage.components.PlayerMoveComponent;
-import testPackage.components.ShootComponent;
+import testPackage.components.CameraComponent;
+import testPackage.components.Player1Component;
 import testPackage.ui.MainMenu;
 
 import java.util.Map;
@@ -26,6 +26,8 @@ public class McDonalismApp extends GameApplication{
 
     @Override
     protected void onPreInit(){
+        getAssetLoader().loadMusic("Crypteque1.mp3");
+        getAssetLoader().loadSound("gunfire.wav");
 
     }
 
@@ -35,8 +37,8 @@ public class McDonalismApp extends GameApplication{
         settings.setManualResizeEnabled(true);
         settings.setPreserveResizeRatio(true); // make it resizable
 
-        settings.setWidth(800);
-        settings.setHeight(800);
+        settings.setWidth(720);
+        settings.setHeight(540);
         settings.setTitle("McDonalism");
         settings.setVersion("0.1");
 //        settings.setDefaultCursor(new CursorInfo("brick.png", 0, 0));
@@ -60,7 +62,10 @@ public class McDonalismApp extends GameApplication{
         launch(args);
     }
 
+    private int key = 1;
     private Entity player1;
+    private Entity weapon1;
+    private Entity camera;
 
     public Entity getPlayer1(){
         return player1;
@@ -76,32 +81,33 @@ public class McDonalismApp extends GameApplication{
     @Override
     protected void initGame() {
 
-        getGameScene().setBackgroundColor(Color.BLACK);
 
-        FXGL.loopBGM("Crypteque1.mp3");
+        if (key == 1){
+            getGameScene().setBackgroundColor(Color.BLACK);
 
-        FXGL.getGameWorld().addEntityFactory(new McDonalismFactory());
+            FXGL.loopBGM("Crypteque1.mp3");
 
-        FXGL.setLevelFromMap("TestLevel.tmx");
+            FXGL.getGameWorld().addEntityFactory(new McDonalismFactory());
 
-        player1 = FXGL.spawn("player1");
+            FXGL.setLevelFromMap("TestLevel.tmx");
 
-        run(() -> FXGL.spawn("enemy1", FXGL.random(0, 800), FXGL.random(0, 800)), Duration.seconds(1));
+            player1 = FXGL.spawn("player1");
+            weapon1 = FXGL.spawn("weapon1");
+            camera = FXGL.spawn("camera");
 
-
-        Viewport viewport = getGameScene().getViewport();
-        viewport.bindToEntity(player1, getAppWidth() / 2, getAppHeight() / 2);
-        viewport.setBounds(-400, -400, 1200, 1200);
-        viewport.unbind();
+            run(() -> FXGL.spawn("enemy1", FXGL.random(0, 800), FXGL.random(0, 800)), Duration.seconds(1));
 
 
-
-
-        player1.getComponent(PlayerMoveComponent.class).move(dir);
+            Viewport viewport = getGameScene().getViewport();
+            viewport.bindToEntity(player1, getAppWidth() / 2, getAppHeight() / 2);
+            viewport.setBounds(-480, -480, 48*50, 48*40);
+        }
     }
 
     @Override
     protected void initPhysics() {
+        getPhysicsWorld().setGravity(0,0);
+
         onCollision(McDonalismType.PLAYER, McDonalismType.ENEMY, (player, enemy) ->
         {
 //            enemy.removeFromWorld();
@@ -116,8 +122,9 @@ public class McDonalismApp extends GameApplication{
 
     @Override
     protected void onUpdate(double tpf) {
+        player1.getComponent(Player1Component.class).move(dir);
 
-            player1.getComponent(PlayerMoveComponent.class).move(dir);
+        weapon1.getTransformComponent().setPosition(player1.getPosition());
     }
 
     @Override
@@ -134,9 +141,7 @@ public class McDonalismApp extends GameApplication{
                 dir = dir.add(up) ;
             }
             @Override
-            protected void onActionEnd() {
-                dir = dir.subtract(up);
-            }
+            protected void onActionEnd() {dir = dir.subtract(up);}
         }, KeyCode.W);
         FXGL.getInput().addAction(new UserAction("Down") {
             @Override
@@ -154,13 +159,7 @@ public class McDonalismApp extends GameApplication{
                 dir = dir.add(left) ;
             }
             @Override
-            protected void onActionEnd() {
-                dir = dir.subtract(left);
-                System.out.println(getPlayer1().getPosition3D());
-                System.out.println(getPlayer1().getZIndex());
-                System.out.println();
-
-            }
+            protected void onActionEnd() { dir = dir.subtract(left);}
 
         }, KeyCode.A);
         FXGL.getInput().addAction(new UserAction("Right") {
@@ -178,7 +177,9 @@ public class McDonalismApp extends GameApplication{
         FXGL.getInput().addAction(new UserAction("Shoot") {
             @Override
             protected void onAction() {
-                player1.getComponent(ShootComponent.class).shoot(getInput().getMousePositionWorld());
+                player1.getComponent(Player1Component.class).shoot();
+                camera.getComponent(CameraComponent.class).recoilBack(5,new Duration(0.5), player1.getComponent(Player1Component.class).aimDir());
+
             }
         }, MouseButton.PRIMARY);
 

@@ -3,7 +3,7 @@ package testPackage;
 public enum McDonalismType {
     PLAYER, ENEMY,
     BULLET,
-    WALL,
+    GHOSTWALL, WALL, BORDER,
     CAMERA,
     WEAPON,
 }
