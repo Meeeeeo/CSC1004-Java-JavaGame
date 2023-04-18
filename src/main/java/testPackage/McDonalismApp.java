@@ -15,6 +15,7 @@ import javafx.scene.paint.Color;
 import javafx.util.Duration;
 import testPackage.components.CameraComponent;
 import testPackage.components.Player1Component;
+import testPackage.components.WeaponComponent;
 import testPackage.ui.MainMenu;
 
 import java.util.Map;
@@ -124,7 +125,6 @@ public class McDonalismApp extends GameApplication{
     protected void onUpdate(double tpf) {
         player1.getComponent(Player1Component.class).move(dir);
 
-        weapon1.getTransformComponent().setPosition(player1.getPosition());
     }
 
     @Override
@@ -177,9 +177,13 @@ public class McDonalismApp extends GameApplication{
         FXGL.getInput().addAction(new UserAction("Shoot") {
             @Override
             protected void onAction() {
-                player1.getComponent(Player1Component.class).shoot();
+                weapon1.getComponent(WeaponComponent.class).shoot();
                 camera.getComponent(CameraComponent.class).recoilBack(5,new Duration(0.5), player1.getComponent(Player1Component.class).aimDir());
 
+            }
+            @Override
+            protected void onActionEnd(){
+                weapon1.getComponent(WeaponComponent.class).idle();
             }
         }, MouseButton.PRIMARY);
 

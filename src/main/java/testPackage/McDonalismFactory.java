@@ -5,6 +5,7 @@ import com.almasb.fxgl.dsl.components.HealthIntComponent;
 import com.almasb.fxgl.dsl.components.ProjectileComponent;
 import com.almasb.fxgl.entity.*;
 import com.almasb.fxgl.physics.BoundingShape;
+import com.almasb.fxgl.physics.HitBox;
 import com.almasb.fxgl.physics.PhysicsComponent;
 import com.almasb.fxgl.physics.box2d.dynamics.BodyType;
 import com.almasb.fxgl.ui.ProgressBar;
@@ -22,7 +23,7 @@ public class McDonalismFactory implements EntityFactory {
                 .type(McDonalismType.CAMERA)
                 .at(400, 400)
                 .with(new CameraComponent())
-                .with(new Player1Component())
+
 
                 .build();
     }
@@ -43,16 +44,17 @@ public class McDonalismFactory implements EntityFactory {
         return FXGL.entityBuilder(data)
                 .type(McDonalismType.PLAYER)
                 .at(400, 400)
-                .viewWithBBox(new Rectangle(48,54, Color.PINK))
                 .collidable()
                 .with(hp)
+                .with(physics)
                 .with(new DynamicDepthComponent())
                 .with(new InjuredComponent())
                 .with(new Player1Component())
-                .with(physics)
+                .bbox(new HitBox(new Point2D(27,39), BoundingShape.box(30, 54)))
+                .scaleOrigin(42,45)
 
 
-                //.neverUpdated()
+//                .neverUpdated()
                 .build();
     }
 
@@ -71,7 +73,6 @@ public class McDonalismFactory implements EntityFactory {
     public Entity newWeapon(SpawnData data) {
         return FXGL.entityBuilder(data)
                 .type(McDonalismType.WEAPON)
-                .view(new Rectangle(2,20, Color.GREEN))
                 .with(new WeaponComponent())
 
 

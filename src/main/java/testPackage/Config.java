@@ -7,7 +7,7 @@ public interface Config {
 
     int BULLET_SPEED = 1000;
 
-    double SHOOT_DELAY = 0.5; // seconds
+    double SHOOT_DELAY = 0.1; // seconds
 
     double BULLET_ACCURACY = 0.1; // On [0.0, 0.1], the lower, the more accurate.
 

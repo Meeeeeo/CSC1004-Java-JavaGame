@@ -5,53 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f399a3f9-5b13-4d53-9491-6f5fb3e13ce1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/CameraComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/WeaponComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid17344.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid44100.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid44195.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid44247.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid44282.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid44312.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid44317.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid47529.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid49809.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid49872.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid57745.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid57836.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid58067.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid58134.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid58169.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid58220.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-04-4月-2023-19.46.49.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-04-4月-2023-21.06.48.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-04-4月-2023-21.08.34.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-30-3月-2023-17.44.34.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-30-3月-2023-17.44.57.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-30-3月-2023-17.45.47.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-30-3月-2023-17.49.04.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-30-3月-2023-18.20.52.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-30-3月-2023-18.21.39.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-30-3月-2023-18.22.57.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.13.07.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.15.38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.16.48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.17.33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.19.15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.23.08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.26.30.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.30.17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.31.50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.34.35.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/AimingComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/Player1Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/PlayerMoveComponent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/ShootComponent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/ZIndexComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/DynamicDepthComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/database/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/database/JdbcUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/ui/GameButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/ui/GameButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/levels/Dungeon_Tileset.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/levels/Interiors_free_16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/levels/Room_Builder_free_16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/levels/TestLevel.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/levels/TestLevel.tmx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/levels/未命名.tmx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/gunfire2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ui/fonts/Abaddon Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/Player1Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/Player1Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/PlayerAnimationComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/WeaponComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/WeaponComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/player1.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +141,9 @@
       <workItem from="1680594978066" duration="7277000" />
       <workItem from="1681122646435" duration="15257000" />
       <workItem from="1681201933736" duration="19059000" />
+      <workItem from="1681551024570" duration="632000" />
+      <workItem from="1681663359883" duration="8943000" />
+      <workItem from="1681802462772" duration="1329000" />
     </task>
     <servers />
   </component>
