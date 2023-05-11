@@ -6,11 +6,11 @@ import java.util.List;
 public class JdbcUtils {
     private static final String USER_NAME = "root";
 
-    private static final String PASSWORD = "123456";
+    private static final String PASSWORD = "12345678";
 
     private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 
-    private static final String URL = "jdbc:mysql://localhost:3306/testdb?allowPublicKeyRetrieval=true&useSSL=false&characterEncoding=utf-8";
+    private static final String URL = "jdbc:mysql://localhost:3306/mcdonalism?allowPublicKeyRetrieval=true&useSSL=false&characterEncoding=utf-8";
 
 
     private Connection connection;
@@ -20,7 +20,6 @@ public class JdbcUtils {
     public JdbcUtils() {
         try {
             Class.forName(DRIVER);
-            System.out.println("database connected");
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -16,7 +16,7 @@ CREATE TABLE `user` (
 BEGIN;
 INSERT INTO `user` VALUES (1, 'Ronald_McDonald', 'LONG_LIVE_MACDONALD', 'male');
 INSERT INTO `user` VALUES (2, 'Colonel_Sanders', 'KFC_CRAZY_THURSDAY_VME50', 'male');
-INSERT INTO `user` VALUES (3, '114514', '1919180', 'homo');
+INSERT INTO `user` VALUES (3, '114514', '1919180', 'male');
 COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 1;
