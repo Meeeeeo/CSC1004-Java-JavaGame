@@ -5,26 +5,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f399a3f9-5b13-4d53-9491-6f5fb3e13ce1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/Transfer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/BulletBorderHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/BulletEnemyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/K_BodyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/K_EnemyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/K_MeleeEnemyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/M_BodyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/M_EnemyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/W_BodyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/W_EnemyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/BorderComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/Enemy1Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/EnergyComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/M_Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/MagicComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/MeleeAreaComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/PunchEffectComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/RecoilComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/W_Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.13.07.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.15.38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.16.48.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.17.33.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.19.15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.23.08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.26.30.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.30.17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.31.50.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-12-4月-2023-01.34.35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid39293.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid39327.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-18-4月-2023-14.56.19.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-18-4月-2023-15.01.33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-18-4月-2023-15.04.02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-18-4月-2023-15.07.11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-18-4月-2023-15.29.48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-18-4月-2023-15.30.47.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-18-4月-2023-15.32.00.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-18-4月-2023-15.40.38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-18-4月-2023-15.42.01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-18-4月-2023-15.42.41.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/Player1Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/Player1Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/PlayerAnimationComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/CameraComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/CameraComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/DynamicDepthComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/DynamicDepthComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/FollowingPlayerComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/InjuredComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/Player1Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/K_Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/TestComponent.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/WeaponComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/WeaponComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/player1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/database/newsSystem.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/database/testdb.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/ui/FailedScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_FailedScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/ui/GameButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/ui/GameLoadingScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_LoadingScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/ui/GameStartupScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_StartupScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/ui/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/levels/TestLevel.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/levels/TestLevel.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/music/Crypteque.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/Cancel.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/CloseMenu.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/Confirm.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/Equip.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/Exit.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/MenuSelections.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/OpenMenu.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/Pause.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/Resume.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/Saved.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/Shop.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/UIsounds/Unequip.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/sounds/drop.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/TestSheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/TestSheet2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/WeaponsSheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/WeaponsSheet2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/textures/brick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ui/cursors/DiamondSword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/ui/fonts/AbaddonBold.ttf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +117,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Meo/Documents/GitHub/122090288_javaProject/src/main/resources/assets/textures&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/meo/Desktop/CSC1004/javaproject/CSC1004java/src/main/resources/assets/sounds&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -71,7 +126,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -80,13 +135,28 @@
       <recent name="testPackage.ui" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/sounds" />
       <recent name="C:\Users\Meo\Documents\GitHub\122090288_javaProject\src\main\resources\assets\textures" />
       <recent name="C:\Users\Meo\Documents\GitHub\122090288_javaProject\src\main\java\testPackage\ui" />
       <recent name="C:\Users\Meo\Documents\GitHub\122090288_javaProject\src\main\java\testPackage\database" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/properties" />
       <recent name="$PROJECT_DIR$/src/main/java/testPackage" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="testPackage.components" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="testPackage.McDonalismApp" />
+      <module name="CSC1004java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="com.soywiz.korge.intellij.UpdateResourceBeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -144,6 +214,12 @@
       <workItem from="1681551024570" duration="632000" />
       <workItem from="1681663359883" duration="8943000" />
       <workItem from="1681802462772" duration="1329000" />
+      <workItem from="1681804727779" duration="5396000" />
+      <workItem from="1681980739049" duration="3494000" />
+      <workItem from="1681990549529" duration="11338000" />
+      <workItem from="1682390927423" duration="164123000" />
+      <workItem from="1683302007517" duration="59000" />
+      <workItem from="1683471950181" duration="103230000" />
     </task>
     <servers />
   </component>
