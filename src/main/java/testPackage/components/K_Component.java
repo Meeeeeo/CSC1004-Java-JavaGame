@@ -64,17 +64,19 @@ public class K_Component extends Component {
 
     private boolean isHit1 = true;
     public void punch(double b){
-        hasPunched = true;
-        if (punchTimer.elapsed(Duration.seconds(0.35))){
-            det = b;
-            punchTimer.capture();
-            if ( FXGLMath.random(0.0,1.0) < 0.3)
-                isHit1 = true;
-            else isHit1 = false;
-            SpawnData data = new SpawnData(entity.getCenter().add(-det*15,-52));
-            data.put("xDir", det);
-            entity.getComponent(EnergyComponent.class).dec();
-            FXGL.spawn("meleeArea", data);
+        if (entity.getComponent(EnergyComponent.class).isReady()){
+            hasPunched = true;
+            if (punchTimer.elapsed(Duration.seconds(0.35))){
+                det = b;
+                punchTimer.capture();
+                if ( FXGLMath.random(0.0,1.0) < 0.3)
+                    isHit1 = true;
+                else isHit1 = false;
+                SpawnData data = new SpawnData(entity.getCenter().add(-det*15,-52));
+                data.put("xDir", det);
+                entity.getComponent(EnergyComponent.class).dec();
+                FXGL.spawn("meleeArea", data);
+            }
         }
     }
 

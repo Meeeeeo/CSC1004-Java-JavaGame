@@ -68,10 +68,11 @@ public class M_MainMenu extends FXGLMenu {
         JdbcUtils j = new JdbcUtils();
         j.getConnection();
 
-        String sql = "insert into `user` (username,password) values (?,?)";
+        String sql = "insert into `user` (username,password,gender) values (?,?,?)";
         List<String> params = new ArrayList<>();
         params.add(username);
         params.add(password);
+        params.add("unknown");
         try {
             return j.insert(sql, params) == 1;
         } catch (Exception e) {
@@ -440,12 +441,6 @@ public class M_MainMenu extends FXGLMenu {
         VBox loginFieldBox = new VBox(l1, f1, l2, f2);
         loginFieldBox.setAlignment(Pos.TOP_LEFT);
         M_Button loginBtn = new M_Button("signIn", () -> {
-            if(f1.getText().equals("") && f2.getText().equals("")) {
-                loginBox.setVisible(false);
-                loginPane.setVisible(false);
-                mainBox.setVisible(true);
-                mainPane.setVisible(true);
-            }
             if (verify(f1.getText(), f2.getText())) {
                 loginBox.setVisible(false);
                 loginPane.setVisible(false);

@@ -177,7 +177,7 @@ public class W_Component extends Component {
                         entity.getComponent(EnergyComponent.class).dec();
                         energyTimer.capture();
                     }
-                    if (entity.getComponent(EnergyComponent.class).isReady())
+                    if (entity.getComponent(EnergyComponent.class).isReady()){
                         FXGL.getGameWorld().getEntitiesInRange(
                                 new Rectangle2D(
                                         entity.getX()-100,
@@ -195,9 +195,10 @@ public class W_Component extends Component {
                                         FXGL.play("W_summon.wav");
                                     }
                                 });
-
-                    if (anim.getAnimationChannel() != summon)
-                        anim.loopAnimationChannel(summon);
+                        if (anim.getAnimationChannel() != summon)
+                            anim.loopAnimationChannel(summon);
+                    }
+                    else anim.loopAnimationChannel(idle);
                 }
                 else if(isRecovering){
                     if (recoverTimer.elapsed(Duration.seconds(0.2))){
