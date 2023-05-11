@@ -15,6 +15,7 @@ public class M_BodyHandler extends CollisionHandler {
     @Override
     protected void onCollisionBegin(Entity player, Entity body) {
         super.onCollisionBegin(player, body);
+        FXGL.play("pick.wav");
         body.getViewComponent().clearChildren();
         body.getViewComponent().addChild(FXGL.texture("enemy/kun_white_dead.png").darker());
         body.removeComponent(PhysicsComponent.class);
