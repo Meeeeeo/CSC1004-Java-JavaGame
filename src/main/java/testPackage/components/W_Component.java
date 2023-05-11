@@ -14,6 +14,7 @@ import javafx.scene.image.Image;
 import javafx.util.Duration;
 import testPackage.Config;
 
+//component for player Wiz
 public class W_Component extends Component {
 
     private final Point2D zero = new Point2D(0,0);

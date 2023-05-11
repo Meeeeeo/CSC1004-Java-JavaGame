@@ -1,5 +1,6 @@
 package testPackage;
 
+//All types in game, mostly used for searching entities
 public enum McDonalismType {
     PLAYER_M,
     PLAYER_K,

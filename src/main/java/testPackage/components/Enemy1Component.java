@@ -4,7 +4,6 @@ import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.dsl.components.HealthIntComponent;
 import com.almasb.fxgl.entity.SpawnData;
 import com.almasb.fxgl.entity.component.Component;
-import com.almasb.fxgl.entity.components.BoundingBoxComponent;
 import com.almasb.fxgl.physics.PhysicsComponent;
 import com.almasb.fxgl.texture.AnimatedTexture;
 import com.almasb.fxgl.texture.AnimationChannel;
@@ -14,8 +13,9 @@ import javafx.scene.image.Image;
 import javafx.util.Duration;
 import testPackage.Config;
 import testPackage.McDonalismApp;
-import testPackage.McDonalismType;
 import testPackage.Transfer;
+
+//component for enemy chicken
 
 public class Enemy1Component extends Component {
 

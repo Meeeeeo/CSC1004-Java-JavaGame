@@ -7,6 +7,7 @@ import com.almasb.fxgl.physics.PhysicsComponent;
 import testPackage.McDonalismType;
 import testPackage.components.EnergyComponent;
 
+//enable McDonald to recover by touching the bodies
 
 public class M_BodyHandler extends CollisionHandler {
 

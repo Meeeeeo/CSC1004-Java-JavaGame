@@ -12,6 +12,8 @@ import javafx.util.Duration;
 import testPackage.Config;
 import testPackage.McDonalismType;
 
+//enabling gun movement, bullet spawning
+
 public class WeaponComponent extends Component {
 
     private Point2D muzzle = new Point2D(70,39);

@@ -7,7 +7,7 @@ import com.almasb.fxgl.physics.PhysicsComponent;
 import testPackage.McDonalismType;
 import testPackage.components.EnergyComponent;
 
-
+//enable Wiz to recover by touching the bodies
 public class W_BodyHandler extends CollisionHandler {
 
     public W_BodyHandler() {super(McDonalismType.PLAYER_W,McDonalismType.BODY);}

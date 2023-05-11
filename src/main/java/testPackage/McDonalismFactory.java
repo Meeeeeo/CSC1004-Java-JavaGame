@@ -27,6 +27,8 @@ public class McDonalismFactory implements EntityFactory {
                 .with(new CameraComponent())
                 .build();
     }
+    //when at single mode, viewport bind to camera. Together with recoil below to simulate gun recoil
+
     @Spawns("recoil")
     public Entity newRecoil(SpawnData data) {
         return FXGL.entityBuilder(data)
@@ -36,6 +38,7 @@ public class McDonalismFactory implements EntityFactory {
                 .with(new ExpireCleanComponent(Duration.seconds(2)))
                 .build();
     }
+    //entity to generate nonlinear movement to simulate gun recoil
 
     @Spawns("M")
     public Entity newM(SpawnData data) {
@@ -54,6 +57,7 @@ public class McDonalismFactory implements EntityFactory {
                 .scaleOrigin(50,45)
                 .build();
     }
+    //player Mcdonald
 
     @Spawns("K")
     public Entity newK(SpawnData data) {
@@ -73,6 +77,7 @@ public class McDonalismFactory implements EntityFactory {
                 .scaleOrigin(39,96)
                 .build();
     }
+    //player Sanders
 
     @Spawns("W")
     public Entity newW(SpawnData data) {
@@ -90,7 +95,8 @@ public class McDonalismFactory implements EntityFactory {
                 .bbox(new HitBox(new Point2D(39,41), BoundingShape.box(27, 55)))
                 .scaleOrigin(50,45)
                 .build();
-        }
+    }
+    //player Wiz
 
     @Spawns("enemy1")
     public Entity newEnemy(SpawnData data){
@@ -119,6 +125,7 @@ public class McDonalismFactory implements EntityFactory {
                 .zIndex((int)data.getY())
                 .build();
     }
+    //dead body of enemy
 
 
     @Spawns("weapon")
@@ -163,6 +170,7 @@ public class McDonalismFactory implements EntityFactory {
                 .with(new ExpireCleanComponent(Duration.seconds(0.15)))
                 .build();
     }
+    //area to detect if melee attack can hit enemy
 
     @Spawns("magic")
     public Entity newMagic(SpawnData data) {
@@ -173,6 +181,7 @@ public class McDonalismFactory implements EntityFactory {
                 .zIndex(10000)
                 .build();
     }
+    //effect to show when enemy gets attacked by magic
 
     @Spawns("effect")
     public Entity newEffect(SpawnData data) {
@@ -183,6 +192,7 @@ public class McDonalismFactory implements EntityFactory {
                 .zIndex(10000)
                 .build();
     }
+    //effect to show when enemy gets punched
 
     @Spawns("border")
     public Entity newBorder(SpawnData data) {
@@ -196,6 +206,7 @@ public class McDonalismFactory implements EntityFactory {
                 .collidable()
                 .build();
     }
+    //border that entities in physical world cannot cross
 
     @Spawns("ghostWall")
     public Entity newGhostWall(SpawnData data) {
@@ -206,10 +217,9 @@ public class McDonalismFactory implements EntityFactory {
                 .type(McDonalismType.GHOSTWALL)
                 .zIndex((int)data.getY() + data.<Integer>get("height") + i)
                 .neverUpdated()
-
-
                 .build();
     }
+    //ghostWall is to help beautify some object to realize depth of field
 
 
 }

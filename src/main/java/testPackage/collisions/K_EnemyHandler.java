@@ -10,6 +10,8 @@ import testPackage.Config;
 import testPackage.McDonalismType;
 import testPackage.components.K_Component;
 
+//enable enemy to hurt Sanders
+
 public class K_EnemyHandler extends CollisionHandler {
     public K_EnemyHandler() {super(McDonalismType.PLAYER_K,McDonalismType.ENEMY);}
     @Override

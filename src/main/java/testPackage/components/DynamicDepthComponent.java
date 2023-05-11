@@ -2,6 +2,7 @@ package testPackage.components;
 
 import com.almasb.fxgl.entity.component.Component;
 
+//component for entities to realize depth of field
 public class DynamicDepthComponent extends Component {
 
     private int h = 0;

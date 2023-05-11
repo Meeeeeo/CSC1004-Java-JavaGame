@@ -9,6 +9,7 @@ import testPackage.Config;
 import testPackage.McDonalismType;
 import testPackage.components.Enemy1Component;
 
+//enable Sanders to punch enemy by implementing the melee area entity
 public class K_MeleeEnemyHandler extends CollisionHandler {
     public K_MeleeEnemyHandler() {super(McDonalismType.MELEE_AREA,McDonalismType.ENEMY);}
     @Override

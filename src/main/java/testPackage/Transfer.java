@@ -1,8 +1,8 @@
 package testPackage;
 
 import com.almasb.fxgl.core.math.FXGLMath;
-import com.almasb.fxgl.dsl.FXGL;
-import javafx.util.Duration;
+
+//class used to transfer some data, making each class clearer.
 
 public final class Transfer {
     private static boolean isSingle;

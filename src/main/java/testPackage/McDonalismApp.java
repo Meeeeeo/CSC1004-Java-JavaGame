@@ -16,8 +16,6 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.MouseButton;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
@@ -25,10 +23,10 @@ import javafx.util.Duration;
 import testPackage.collisions.*;
 import testPackage.components.*;
 import testPackage.ui.M_FailedScene;
+import testPackage.ui.M_LoadingScene;
 import testPackage.ui.M_MainMenu;
 import testPackage.ui.M_StartupScene;
 
-import java.io.File;
 import java.util.Map;
 
 import static com.almasb.fxgl.dsl.FXGL.*;
@@ -62,6 +60,7 @@ public class McDonalismApp extends GameApplication{
         getAssetLoader().loadSound("hover.wav");
         getAssetLoader().loadSound("confirm.wav");
 
+        //load assets when initializing
     }
 
     @Override
@@ -86,6 +85,11 @@ public class McDonalismApp extends GameApplication{
         settings.setMainMenuEnabled(true);
         settings.setSceneFactory(new SceneFactory() {
             @Override
+            public LoadingScene newLoadingScene() {
+                return new M_LoadingScene();
+            }
+
+            @Override
             public StartupScene newStartup(int width, int height) {
                 return new M_StartupScene(width, height);
             }
@@ -95,6 +99,7 @@ public class McDonalismApp extends GameApplication{
             }
         });
     }
+    //basic settings, including cursor, resolution, fonts, enabling customized scene, and basic information of game
 
     public static void main(String[] args) {
         launch(args);
@@ -112,10 +117,6 @@ public class McDonalismApp extends GameApplication{
         return player2;
     }
     private Entity weapon;
-
-    private Entity camera;
-    private Entity recoil;
-
     private Point2D dir1 = new Point2D(0,0);
     private Point2D dir2 = new Point2D(0,0);
     private final Point2D up = new Point2D(0,-1);
@@ -125,7 +126,10 @@ public class McDonalismApp extends GameApplication{
     private LocalTimer scoreTimer;
     private boolean isSingle = true;
 
-   TimerAction action;
+    private boolean end = false;
+
+
+    TimerAction action;
 
     @Override
     protected void initGame() {
@@ -134,8 +138,10 @@ public class McDonalismApp extends GameApplication{
         FXGL.getGameWorld().addEntityFactory(new McDonalismFactory());
         FXGL.setLevelFromMap("TestLevel.tmx");
         Viewport viewport = getGameScene().getViewport();
+        //basic initialization including adding level, factory, etc.
 
         end = false;
+        //signal to detect whether a game should end; it will be used later.
 
         FXGL.loopBGM("Crypteque1.mp3");
         action = getEngineTimer().runAtInterval(()-> {
@@ -151,13 +157,16 @@ public class McDonalismApp extends GameApplication{
             else
                 getAudioPlayer().resumeAllMusic();
         }, Duration.seconds(tpf()));
+        //bgm settings. Enable it only to be played in game, and restart when start a new game.
 
         Transfer transfer = new Transfer();
         isSingle = transfer.isSingle();
-
         id = transfer.getHeroId();
         id1 = transfer.getHeroId1();
         id2 = transfer.getHeroId2();
+        //"transfer" is a class to handle and transfer the data from menu, such as chosen mode and hero.
+
+
 
         if (isSingle){
             if (id == 1){
@@ -165,7 +174,7 @@ public class McDonalismApp extends GameApplication{
                 player1 = FXGL.spawn("M");
                 player1.getComponent(EnergyComponent.class).setPlayer("");
                 weapon = FXGL.spawn("weapon");
-                camera = FXGL.spawn("camera");
+                Entity camera = FXGL.spawn("camera");
                 viewport.bindToEntity(camera,
                         getAppWidth() / 2 - player1.getWidth(),
                         getAppHeight() / 2 - player1.getHeight());
@@ -205,6 +214,9 @@ public class McDonalismApp extends GameApplication{
             viewport.setBounds(-480, -480, 48*50, 48*40);
             viewport.setZoom(1.0);
         }
+        //settings for single player mode
+
+
         else {
             if (id1 == 1){
                 player1 = FXGL.spawn("M");
@@ -243,8 +255,12 @@ public class McDonalismApp extends GameApplication{
                 }
             }, Duration.seconds(3));
         }
+        //settings for multiplayer mode
+
+
         scoreTimer = FXGL.newLocalTimer();
         scoreTimer.capture();
+        //timer to measure the survival time, which is counted in the final score.
     }
 
     @Override
@@ -268,11 +284,12 @@ public class McDonalismApp extends GameApplication{
         getPhysicsWorld().addCollisionHandler(new K_EnemyHandler());
 
         getPhysicsWorld().addCollisionHandler(new K_MeleeEnemyHandler());
+
+        //adding collision handler. The usage can be seen in class names.
     }
-    private boolean end = false;
+
     @Override
     protected void onUpdate(double tpf) {
-
 
         if(isSingle){
             if (!getb("isAlive")){
@@ -321,6 +338,11 @@ public class McDonalismApp extends GameApplication{
             }
         }
     }
+
+    //onupdate will be called every frame. The usage is as followed
+    //1. check whether all players are dead. if yes, end the game.
+    //2. record the score generated by survival time
+    //3. enable player moving method
 
     @Override
     protected void initInput() {
@@ -485,6 +507,7 @@ public class McDonalismApp extends GameApplication{
         }, KeyCode.K);
 
     }
+    //handle input and bind the actions to specific functions
 
 
     @Override
@@ -591,8 +614,7 @@ public class McDonalismApp extends GameApplication{
             addUINode(pane2);
         }
     }
-
-
+    //initUI is to show the basic HUD in game, including hp, mp, player id.
 }
 
 

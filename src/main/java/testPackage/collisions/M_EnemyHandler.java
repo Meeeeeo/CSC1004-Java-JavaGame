@@ -10,6 +10,8 @@ import testPackage.Config;
 import testPackage.McDonalismType;
 import testPackage.components.M_Component;
 
+//enable enemy to hurt McDonald
+
 public class M_EnemyHandler extends CollisionHandler {
 
     public M_EnemyHandler() {super(McDonalismType.PLAYER_M,McDonalismType.ENEMY);}

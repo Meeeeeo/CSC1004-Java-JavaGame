@@ -6,6 +6,8 @@ import com.almasb.fxgl.texture.AnimatedTexture;
 import com.almasb.fxgl.texture.AnimationChannel;
 import javafx.util.Duration;
 
+//show punching effect animation
+
 public class PunchEffectComponent extends Component {
 
     private AnimatedTexture anim;

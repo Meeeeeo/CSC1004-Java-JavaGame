@@ -8,6 +8,8 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
+// customized loading scene
+
 public class M_LoadingScene extends LoadingScene {
     public M_LoadingScene() {
         Rectangle rect = new Rectangle(getAppWidth(),getAppHeight(), Color.web("#666666"));
@@ -16,7 +18,6 @@ public class M_LoadingScene extends LoadingScene {
         Image logo = FXGL.image("ui/M_logo.png");
         StackPane pane = new StackPane(bg, new ImageView(logo));
         getContentRoot().getChildren().add(pane);
-        // add normal background for start-up scene
 
     }
 }

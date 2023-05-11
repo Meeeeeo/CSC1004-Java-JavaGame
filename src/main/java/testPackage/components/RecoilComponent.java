@@ -1,7 +1,5 @@
 package testPackage.components;
 
-import com.almasb.fxgl.animation.Animation;
-import com.almasb.fxgl.animation.AnimationBuilder;
 import com.almasb.fxgl.animation.Interpolators;
 import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.component.Component;
@@ -10,6 +8,8 @@ import javafx.util.Duration;
 import testPackage.McDonalismType;
 
 import static com.almasb.fxgl.dsl.FXGL.animationBuilder;
+
+//component to generate nonlinear movement to recoil
 
 public class RecoilComponent extends Component {
     private final Point2D origin = new Point2D(0,0);

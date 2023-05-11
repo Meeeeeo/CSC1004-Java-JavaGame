@@ -7,7 +7,7 @@ import com.almasb.fxgl.physics.PhysicsComponent;
 import testPackage.McDonalismType;
 import testPackage.components.EnergyComponent;
 
-
+//enable Sanders to recover by touching the bodies
 public class K_BodyHandler extends CollisionHandler {
 
     public K_BodyHandler() {super(McDonalismType.PLAYER_K,McDonalismType.BODY);}

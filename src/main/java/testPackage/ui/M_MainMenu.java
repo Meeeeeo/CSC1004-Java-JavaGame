@@ -27,6 +27,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+//customized main menu, enabling login in and sign up, mode and hero choosing.
+//show the video in the beginning
+
 public class M_MainMenu extends FXGLMenu {
 
     private int heroId = 0;

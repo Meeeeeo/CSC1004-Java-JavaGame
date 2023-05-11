@@ -4,6 +4,7 @@ import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.component.Component;
 import testPackage.McDonalismType;
 
+//camera to simulate recoil
 public class CameraComponent extends Component {
 
     @Override

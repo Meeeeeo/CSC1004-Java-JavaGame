@@ -6,6 +6,7 @@ import com.almasb.fxgl.texture.AnimatedTexture;
 import com.almasb.fxgl.texture.AnimationChannel;
 import javafx.util.Duration;
 
+//component to show animation of magic
 public class MagicComponent extends Component {
 
     private AnimatedTexture anim;

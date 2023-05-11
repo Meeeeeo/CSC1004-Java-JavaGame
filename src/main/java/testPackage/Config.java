@@ -2,8 +2,7 @@ package testPackage;
 
 public interface Config {
 
-    String DEVELOPER_ACCOUNT = "114514";
-    String DEVELOPER_PASSWORD = "1919180";
+    //interface to make it more convenient to modify some value of the game
 
     int M_HP = 60;
     int M_SPEED = 48*5; // pixels per second

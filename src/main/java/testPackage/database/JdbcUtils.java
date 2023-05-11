@@ -3,6 +3,8 @@ package testPackage.database;
 import java.sql.*;
 import java.util.List;
 
+//used for login in and sign up. Most of the code is from tutorial.
+
 public class JdbcUtils {
     private static final String USER_NAME = "root";
 

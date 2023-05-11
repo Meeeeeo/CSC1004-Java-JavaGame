@@ -1,15 +1,13 @@
 package testPackage.collisions;
 
-import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.dsl.components.HealthIntComponent;
 import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.physics.CollisionHandler;
-import com.almasb.fxgl.time.LocalTimer;
-import javafx.util.Duration;
 import testPackage.Config;
 import testPackage.McDonalismType;
 import testPackage.components.Enemy1Component;
 
+//enable bullet to hurt enemy
 public class BulletEnemyHandler  extends CollisionHandler {
 
     public BulletEnemyHandler() {

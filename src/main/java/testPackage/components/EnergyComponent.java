@@ -3,6 +3,8 @@ package testPackage.components;
 import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.entity.component.Component;
 
+//component to manipulate the mp of players
+
 public class EnergyComponent extends Component {
     int max;
     int inc;

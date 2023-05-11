@@ -10,6 +10,7 @@ import testPackage.Config;
 import testPackage.McDonalismType;
 import testPackage.components.W_Component;
 
+//enable enemy to hurt Wiz
 public class W_EnemyHandler extends CollisionHandler {
     public W_EnemyHandler() {super(McDonalismType.PLAYER_W,McDonalismType.ENEMY);}
     @Override

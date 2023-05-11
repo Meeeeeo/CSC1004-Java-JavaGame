@@ -7,6 +7,8 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
+//customized startup scene
+
 public class M_StartupScene extends StartupScene {
     public M_StartupScene(int appWidth, int appHeight) {
         super(appWidth, appHeight);
