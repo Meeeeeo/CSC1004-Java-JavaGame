@@ -5,6 +5,7 @@ import com.almasb.fxgl.entity.Entity;
 import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.physics.PhysicsComponent;
 import testPackage.McDonalismType;
+import testPackage.components.BodyComponent;
 import testPackage.components.EnergyComponent;
 
 //enable McDonald to recover by touching the bodies
@@ -15,11 +16,14 @@ public class M_BodyHandler extends CollisionHandler {
     @Override
     protected void onCollisionBegin(Entity player, Entity body) {
         super.onCollisionBegin(player, body);
-        FXGL.play("pick.wav");
-        body.getViewComponent().clearChildren();
-        body.getViewComponent().addChild(FXGL.texture("enemy/kun_white_dead.png").darker());
-        body.removeComponent(PhysicsComponent.class);
-        player.getComponent(EnergyComponent.class).inc(10);
-        FXGL.getWorldProperties().increment("score", 5);
+        if(!body.getComponent(BodyComponent.class).isTouched()){
+            FXGL.play("pick.wav");
+            body.getViewComponent().clearChildren();
+            body.getViewComponent().addChild(FXGL.texture("enemy/kun_white_dead.png").darker());
+            body.removeComponent(PhysicsComponent.class);
+            player.getComponent(EnergyComponent.class).inc(10);
+            FXGL.getWorldProperties().increment("score", 5);
+            body.getComponent(BodyComponent.class).setTouched();
+        }
     }
 }

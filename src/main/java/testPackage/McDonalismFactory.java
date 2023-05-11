@@ -121,6 +121,7 @@ public class McDonalismFactory implements EntityFactory {
                 .type(McDonalismType.BODY)
                 .viewWithBBox(FXGL.texture("enemy/kun_white_dead.png"))
                 .scaleOrigin(24, 0)
+                .with(new BodyComponent())
                 .scale(data.get("scale"),1)
                 .zIndex((int)data.getY())
                 .build();
