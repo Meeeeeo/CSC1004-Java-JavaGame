@@ -6,38 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f399a3f9-5b13-4d53-9491-6f5fb3e13ce1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/FXGL-11-5月-2023-16.18.24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/McDonalismType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/Transfer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/Transfer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/collisions/BulletBorderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/BulletBorderHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/collisions/BulletEnemyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/BulletEnemyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/collisions/K_BodyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/K_BodyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/collisions/K_EnemyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/K_EnemyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/collisions/K_MeleeEnemyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/K_MeleeEnemyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/collisions/M_BodyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/M_BodyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/collisions/M_EnemyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/M_EnemyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/collisions/W_BodyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/W_BodyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/collisions/W_EnemyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/collisions/W_EnemyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/BorderComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/BorderComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/CameraComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/CameraComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/DynamicDepthComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/DynamicDepthComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/Enemy1Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/Enemy1Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/EnergyComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/EnergyComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/K_Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/K_Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/M_Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/M_Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/MagicComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/MagicComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/MeleeAreaComponent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/PunchEffectComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/PunchEffectComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/RecoilComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/RecoilComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/W_Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/W_Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/components/WeaponComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/components/WeaponComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/database/JdbcUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/database/JdbcUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_LoadingScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_LoadingScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_StartupScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testPackage/ui/M_StartupScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-11-5月-2023-16.21.35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-11-5月-2023-16.21.54.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/FXGL-11-5月-2023-16.24.44.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,6 +151,7 @@
       <workItem from="1683471950181" duration="105512000" />
       <workItem from="1683790963123" duration="2601000" />
       <workItem from="1683796408004" duration="2453000" />
+      <workItem from="1683800838338" duration="2888000" />
     </task>
     <servers />
   </component>
