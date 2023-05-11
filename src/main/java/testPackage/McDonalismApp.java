@@ -197,7 +197,7 @@ public class McDonalismApp extends GameApplication{
             }
 
             run(() -> {
-                for (int i = 0; i < getGameTimer().getNow()/5; i++){
+                for (int i = 0; i < getGameTimer().getNow()/10; i++){
                     boolean inView = true;
                     int trial = 0;
                     while (inView){
@@ -209,7 +209,7 @@ public class McDonalismApp extends GameApplication{
                         }
                     }
                 }
-            }, Duration.seconds(3));
+            }, Duration.seconds(5));
 
             viewport.setBounds(-480, -480, 48*50, 48*40);
             viewport.setZoom(1.0);
@@ -239,7 +239,7 @@ public class McDonalismApp extends GameApplication{
 
 
             run(() -> {
-                for (int i = 0; i < getGameTimer().getNow()/5; i++){
+                for (int i = 0; i < getGameTimer().getNow()/10; i++){
                     boolean inView = true;
                     int trial = 0;
                     while (inView){
@@ -253,7 +253,7 @@ public class McDonalismApp extends GameApplication{
                         }
                     }
                 }
-            }, Duration.seconds(3));
+            }, Duration.seconds(5));
         }
         //settings for multiplayer mode
 
