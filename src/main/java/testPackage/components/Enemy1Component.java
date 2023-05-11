@@ -123,7 +123,9 @@ public class Enemy1Component extends Component {
         if (isSingle)
             move(McDonalismApp.getPlayer1().getCenter().subtract(entity.getCenter()));
         else{
-            if (entity.distanceBBox(McDonalismApp.getPlayer1()) < entity.distanceBBox(McDonalismApp.getPlayer2())){
+            if ((entity.distanceBBox(McDonalismApp.getPlayer1()) < entity.distanceBBox(McDonalismApp.getPlayer2())
+                    && FXGL.getWorldProperties().getBoolean("isAlive1"))
+                    || !FXGL.getWorldProperties().getBoolean("isAlive2")){
                 move(McDonalismApp.getPlayer1().getCenter().subtract(entity.getCenter()));
             } else {
                 move(McDonalismApp.getPlayer2().getCenter().subtract(entity.getCenter()));

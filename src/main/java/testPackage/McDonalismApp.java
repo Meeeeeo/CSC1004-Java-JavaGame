@@ -244,7 +244,7 @@ public class McDonalismApp extends GameApplication{
                     int trial = 0;
                     while (inView){
                         trial++;
-                        Point2D pos = new Point2D(FXGL.random(0, 800), FXGL.random(30, 800));
+                        Point2D pos = new Point2D(FXGL.random(0, 1000), FXGL.random(100, 1000));
                         if((player2.getCenter().subtract(pos).magnitude() >= 200
                                 && player1.getCenter().subtract(pos).magnitude() >= 200)
                                 || trial > 15){
