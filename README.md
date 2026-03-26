@@ -1,4 +1,4 @@
-# Java Game - McDonalismApp
+# Java Game based on FXGL - McDonalism
 
 
 To run this game, you need to open the project in an IDE (I used IntelliJ IDE).
